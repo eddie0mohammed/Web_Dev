@@ -51,16 +51,6 @@ h6
 	margin: 10px;
 }
 
-#buttons
-{
-	position: absolute;
-	width:100px;
-	top:50px;
-	left:50%;
-	transform:translate(-50%, 0);
-	background: pink;
-	
-}
 .func
 {
 	display: block;
@@ -85,16 +75,42 @@ div	img
 	margin-top:110px;
 	margin-bottom:0;
 	
-	
 }
+#newGame
+{
+	position: absolute;
+	width:100px;
+	top:50px;
+	left:50%;
+	transform:translate(-50%, 0); 
+}
+#roll
+{
+	position: absolute;
+	width:100px;
+	top:250px;
+	left:50%;
+	transform:translate(-50%, 0);
 
+}
+#hold
+{
+	position: absolute;
+	width:100px;
+	top:275px;
+	left:50%;
+	transform:translate(-50%, 0);
 
+}
+#img
+{
+	position: absolute;
+	width:60px;
+	top:100px;
+	left:50%;
+	transform:translate(-50%, 0);
 
-
-
-
-
-
+}
 
 
 
