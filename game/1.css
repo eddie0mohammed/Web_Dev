@@ -1,0 +1,104 @@
+body
+{
+	background-color: #aeaf50;
+}
+#container
+{
+	background-color:white;
+	width:70%;
+	height: 400px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+.players
+{
+	width: 50%;
+	height:100%;
+
+}
+.header
+{
+	margin-top:90px;
+}
+.onWhite
+{
+	background-color:#f9f5f2;
+}
+.offWhite
+{
+	background-color:#e5e5e5;
+}
+div
+{
+	text-align: center;
+}
+section
+{
+	background-color:#f44b4b;
+	width:35%;
+	height:70px;
+	margin:0 auto;
+	margin-top:70px;
+	padding: 2px;
+}
+h3
+{
+	color:white;
+}
+h6
+{
+	margin: 10px;
+}
+
+#buttons
+{
+	position: absolute;
+	width:100px;
+	top:50px;
+	left:50%;
+	transform:translate(-50%, 0);
+	background: pink;
+	
+}
+.func
+{
+	display: block;
+	border:none;
+	width:100px;
+	font-size:14px;
+	margin:0 auto;
+	background-color: transparent;
+}
+#roll
+{
+	margin-top:20px;
+}
+#hold
+{
+	margin-top:20px;
+}
+div	img
+{
+	width:60px;
+	border-radius:5px;
+	margin-top:110px;
+	margin-bottom:0;
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
