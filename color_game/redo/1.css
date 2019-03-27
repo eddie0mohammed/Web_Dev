@@ -18,7 +18,7 @@ header
 }
 #head
 {
-	width:40%;
+	width:60%;
 	margin:10px auto;
 }
 h1
@@ -87,8 +87,14 @@ main
 	background-color: white;
 
 }
-
-
+.hide
+{
+	background-color: rgb(255, 255, 255);
+}
+.para
+{
+	display:none;
+}
 
 
 
