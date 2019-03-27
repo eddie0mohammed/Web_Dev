@@ -108,10 +108,23 @@ img
 }
 .buttons:hover
 {
-	background-color: gray;
-	border-radius: 10px;
+	background-color: #e2e2e2;
+	border-radius: 6px;
 }
 
+.hide
+{
+	display:none;
+}
+
+.active
+{
+	 color:red;
+}
+.over
+{
+	display: none;
+}
 
 
 
