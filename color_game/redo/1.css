@@ -70,7 +70,7 @@ nav
 main
 {
 	width:50%;
-	margin:0 auto;
+	margin:10px auto;
 }
 .cont
 {
@@ -84,7 +84,7 @@ main
 	height:120px;
 	margin:10px;
 	border-radius: 10px;
-	background-color: pink;
+	background-color: white;
 
 }
 
