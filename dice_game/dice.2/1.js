@@ -1,7 +1,6 @@
 
-let scores, roundScores, activePlayer;
-
-
+let scores, roundScores, activePlayer, winningScore;
+let previousRoll = 0;
 init();
 
 // dice_value = Math.floor(Math.random() * 6) + 1;
@@ -9,8 +8,15 @@ init();
 
 //connect random dice number to score in current
 // document.querySelector(`#current-${activePlayer}`).textContent = dice_value;
+ 
+let finalScore = document.querySelector(".final-score").value;
+if (finalScore)
+	winningScore = finalScore;
+else
+	winningScore = 20;
 
 
+console.log(finalScore);
 
 //hide dice at the begining of game;
 //select dice
@@ -36,12 +42,21 @@ roll.addEventListener("click", function(){
 		roundScores += value_dice;
 		//display new current scores
 		document.getElementById(`current-${activePlayer}`).textContent = roundScores;
-	}else{
+	}
+	else if (previousRoll == 6 && value_dice == 6) {
+		score[activePlayer] = 0;
+		document.getElementById(`current-${activePlayer}`).textContent = "0";
+		document.querySelector(`#score-${activePlayer}`).textContent = "0";
+		change_player();
+
+	}
+	else{
 		roundScores = 0;
 		document.getElementById(`current-${activePlayer}`).textContent = "0";
 		change_player();
 
 	}
+	previousRoll = value_dice;
 
 });
 	
@@ -66,7 +81,7 @@ hold.addEventListener("click", function(){
 
 
 	//check if scores > 20 (game end)
-	if (score[activePlayer] >= 20){
+	if (score[activePlayer] >= winningScore){
 		//display winner
 		document.getElementById(`name-${activePlayer}`).textContent = "WINNER";
 		//hide dice, roll, hold
