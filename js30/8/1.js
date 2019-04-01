@@ -43,7 +43,7 @@ function draw(e){
 	hue++;
 	if (hue >= 360)
 		hue = 0;
-	if (ctx.lineWidth >= 50 || ctx.lineWidth <= 30)
+	if (ctx.lineWidth >= 50 || ctx.lineWidth <= 10)
 		direction = !direction;
 	if (direction)
 		ctx.lineWidth++;
