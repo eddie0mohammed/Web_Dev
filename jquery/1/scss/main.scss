@@ -1,0 +1,100 @@
+@import 'variables';
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: Roboto;
+
+    background: #3CA55C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B5AC49, #3CA55C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B5AC49, #3CA55C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#container{
+    width: 360px;
+    margin: 100px auto;
+    background: $container-background;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+
+    input{
+        font-size:18px;
+        background: $container-background;
+        width: 100%;
+        padding: 13px 13px 13px 20px;
+        box-sizing: border-box;
+        color: $header-color;
+        border: 3px solid rgba(0, 0, 0, 0);
+
+        &:focus{
+            background: #fff;
+            border: 2px solid $header-color;
+            outline: none;
+        }
+
+    }
+
+    h1{
+        background: $header-color;
+        color:white;
+        margin:0;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .fa-plus{
+        float:right;
+    }
+    &:after{
+        content:"";
+        display: block;
+        clear: both;
+
+    }
+   
+
+    ul{
+        list-style: none;
+        margin:0;
+        padding:0;
+    }
+
+    li{
+        background:#fff;
+        color: $li-color;
+        height: 40px;
+        line-height: 40px;
+
+        &:nth-child(2n){
+            background: $container-background;
+        }
+
+        &:hover span{
+            opacity: 1;
+            width: 40px;
+        }
+    }
+
+    span{
+        background: #e74c3c;
+        display: inline-block;
+        width: 0px;
+        text-align: center;
+        margin-right: 20px;
+        height:40px;
+        transition: 0.2s linear;
+        opacity: 0;
+        
+        .fa-trash{
+            color:white;
+            
+        }
+    }
+}
+
+// li: on click turns gray and line-through
+.line-through{
+    color: gray;
+    text-decoration: line-through;
+}
